@@ -1,0 +1,120 @@
+LIBNAME 	"bg_pkg_1136x640"			BG_PKG_1136x640_PACK
+	ADD 		".\bg01_layer1.bpine"					SPRITEID_BG_01_PALYER_1_1136x640
+	ADD 		".\bg01_layer2.bpine"					SPRITEID_BG_01_PALYER_2_1136x640
+	ADD 		".\bg01_layer4.bpine"					SPRITEID_BG_01_PALYER_4_1136x640
+	ADD 		".\bg01_layer2a.bpine"					SPRITEID_BG_01_PALYER_2A_1136x640
+	ADD 		".\bg_mainmenu_ipad.bpine"					SPRITEID_BG_MAIN_MENU_1136x640
+	ADD 		".\swap_bg_layer1_ipad.bpine"					SPRITEID_BG_SWAP_LAYER_1_1136x640
+	ADD 		".\swap_bg_layer2_ipad.bpine"					SPRITEID_BG_SWAP_LAYER_2_1136x640
+	ADD 		".\bg02_layer1.bpine"					SPRITEID_BG_02_PALYER_1_1136x640
+	ADD 		".\bg02_layer2.bpine"					SPRITEID_BG_02_PALYER_2_1136x640
+	ADD 		".\bg02_layer3.bpine"					SPRITEID_BG_02_PALYER_3_1136x640
+	ADD 		".\bg02_layer4.bpine"					SPRITEID_BG_02_PALYER_4_1136x640
+	ADD 		".\bg01_layer3.bpine"					SPRITEID_BG_01_PALYER_3_1136x640
+	ADD 		".\bg_loading.bpine"					SPRITEID_BG_LOADING_1136x640
+ENDLIB
+LIBNAME 	"charater_pkg_1136x640"			CHARATER_PKG_1136x640_PACK
+	ADD 		".\character01_ipad.bpine"					SPRITEID_CHARATER_01_1136x640
+	ADD 		".\character02_ipad.bpine"					SPRITEID_CHARATER_02_1136x640
+	ADD 		".\character03_ipad.bpine"					SPRITEID_CHARATER_03_1136x640
+	ADD 		".\character04_ipad.bpine"					SPRITEID_CHARATER_04_1136x640
+	ADD 		".\character05_ipad.bpine"					SPRITEID_CHARATER_05_1136x640
+ENDLIB
+LIBNAME 	"enemy_pkg_1136x640"			ENEMY_PKG_1136x640_PACK
+	ADD 		".\enemy01_ipad.bpine"					SPRITEID_ENEMY_01_1136x640
+	ADD 		".\enemy02_ipad.bpine"					SPRITEID_ENEMY_02_1136x640
+	ADD 		".\enemy03_ipad.bpine"					SPRITEID_ENEMY_03_1136x640
+	ADD 		".\enemy04_ipad.bpine"					SPRITEID_ENEMY_04_1136x640
+	ADD 		".\enemy05_ipad.bpine"					SPRITEID_ENEMY_05_1136x640
+	ADD 		".\boss01_ipad.bpine"					SPRITEID_BOSS_01_1136x640
+	ADD 		".\boss02_ipad.bpine"					SPRITEID_BOSS_02_1136x640
+	ADD 		".\boss03_ipad.bpine"					SPRITEID_BOSS_03_1136x640
+	ADD 		".\boss01a_ipad.bpine"					SPRITEID_BOSS_1_A_1136x640
+	ADD 		".\boss03a_ipad.bpine"					SPRITEID_BOSS_3_A_1136x640
+ENDLIB
+LIBNAME 	"obstacle_pkg_1136x640"			OBSTACLE_PKG_1136x640_PACK
+	ADD 		".\obstacles_ipad.bpine"					SPRITEID_OBSTACLE_1136x640
+	ADD 		".\form_design_coin_ipad.bpine"					SPRITEID_FROM_COIN_1136x640
+	ADD 		".\form_design_obstacle_ipad.bpine"					SPRITEID_FROM_OBSTACLE_1136x640
+	ADD 		".\rocket_ipad.bpine"					SPRITEID_OBSTACLE_ROCKET_1136x640
+	ADD 		".\tresure_chess_ipad.bpine"					SPRITEID_TRESURE_CHESS_1136x640
+	ADD 		".\form_design_rocket_ipad.bpine"					SPRITEID_FROM_ROCKET_1136x640
+ENDLIB
+LIBNAME 	"effect_pkg_1136x640"			EFFECT_PKG_1136x640_PACK
+	ADD 		".\bullets_ipad.bpine"					SPRITEID_EFFECT_BULLET_1136x640
+	ADD 		".\partical_ipad.bpine"					SPRITEID_EFFECT_PARTICAL_1136x640
+	ADD 		".\explosion_ipad.bpine"					SPRITEID_EFFECT_EXPLOSION_1136x640
+	ADD 		".\fast_effect_ipad.bpine"					SPRITEID_EFFECT_FAST_1136x640
+	ADD 		".\dust_effect_ipad.bpine"					SPRITEID_EFFECT_DUST_1136x640
+	ADD 		".\wagon_partical_ipad.bpine"					SPRITEID_EFFECT_WAGON_PARTICAL_1136x640
+	ADD 		".\gold_partical_ipad.bpine"					SPRITEID_EFFECT_GOLD_PARTICAL_1136x640
+	ADD 		".\train_smoke_ipad.bpine"					SPRITEID_EFFECT_TRAIN_SMOKE_1136x640
+ENDLIB
+LIBNAME 	"hud_pkg_1136x640"			HUD_PKG_1136x640_PACK
+	ADD 		".\gameover_ipad.bpine"					SPRITEID_HUD_GAME_OVER_1136x640
+	ADD 		".\coin_ipad.bpine"					SPRITEID_HUD_COIN_1136x640
+	ADD 		".\igm_ipad.bpine"					SPRITEID_HUD_INGAME_1136x640
+	ADD 		".\joystick_ipad.bpine"					SPRITEID_HUD_STICK_1136x640
+	ADD 		".\machete_ipad.bpine"					SPRITEID_HUD_MACHETE_1136x640
+	ADD 		".\shop_ipad.bpine"					SPRITEID_HUD_SHOP_1136x640
+	ADD 		".\mule_ipad.bpine"					SPRITEID_HUD_MULE_1136x640
+	ADD 		".\medal_ipad.bpine"					SPRITEID_HUD_MEDAL_1136x640
+	ADD 		".\distance_board_ipad.bpine"					SPRITEID_HUD_CHECK_POINT_1136x640
+	ADD 		".\result_ipad.bpine"					SPRITEID_HUD_RESULT_1136x640
+	ADD 		".\apple_ipad.bpine"					SPRITEID_HUD_APPLE_1136x640
+	ADD 		".\tutorial_ipad.bpine"					SPRITEID_HUD_TUTORIAL_1136x640
+	ADD 		".\loading_ipad.bpine"					SPRITEID_HUD_ICON_LOADING_1136x640
+ENDLIB
+LIBNAME 	"font_pkg_1136x640"			FONT_PKG_1136x640_PACK
+	ADD 		".\font_money_ipad.bpine"					SPRITEID_FONT_MONEY_1136x640
+	ADD 		".\font_distance_ipad.bpine"					SPRITEID_FONT_DISTANCE_1136x640
+	ADD 		".\font_powerup_ipad.bpine"					SPRITEID_FONT_POWER_1136x640
+	ADD 		".\font_result_ipad.bpine"					SPRITEID_FONT_RESULT_1136x640
+ENDLIB
+
+LIBNAME		"sfx"			SFX_PACK
+	ADD		".\sfx_bomb.wav"			SFX_BOMB
+	ADD		".\sfx_button_start.wav"			SFX_BUTTON_START
+	ADD		".\sfx_coin.wav"			SFX_COIN
+	ADD		".\sfx_gunshot.wav"			SFX_GUNSHOT
+	ADD		".\sfx_horse_up_down.wav"			SFX_HORSE_UP_DOWN
+	ADD		".\sfx_mission_completed.wav"			SFX_MISSION_COMPLETED
+	ADD		".\sfx_mission_failed.wav"			SFX_MISSION_FAILED
+	ADD		".\sfx_powerup_collected.wav"			SFX_POWERUP_COLLECTED
+	ADD		".\sfx_score_counting.wav"			SFX_SCORE_COUNTING
+	ADD		".\sfx_upgrade.wav"			SFX_UPGRADE
+	ADD		".\sfx_warning.wav"			SFX_WARNING
+	ADD		".\sfx_boss_defeated.wav"			SFX_BOSS_DEFEATED
+	ADD		".\sfx_button.wav"			SFX_BUTTON
+	ADD		".\sfx_missiles.wav"			SFX_MISSILES
+	ADD		".\sfx_gameover.wav"			SFX_GAMEOVER
+	ADD		".\sfx_gunshot_boss.wav"			SFX_GUNSHOT_BOSS
+	ADD		".\sfx_horse_run.wav"			SFX_HORSE_RUN
+	ADD		".\sfx_train_start_stop.wav"			SFX_TRAIN_START_STOP
+	ADD		".\sfx_train_warning.wav"			SFX_TRAIN_WARNING
+	ADD		".\sfx_gunshot_gameover.wav"			SFX_GUNSHOT_GAMEOVER
+	ADD		".\sfx_knife.wav"			SFX_KNIFE
+	ADD		".\sfx_player_hurt.wav"			SFX_PLAYER_HURT
+	ADD		".\sfx_train_goin.wav"			SFX_TRAIN_GOIN
+	ADD		".\sfx_boss_throwing_bomb.wav"			SFX_BOSS_THROWING_BOMB
+	ADD		".\sfx_enemy_die_1.wav"			SFX_ENEMY_DIE_1
+	ADD		".\sfx_enemy_die_2.wav"			SFX_ENEMY_DIE_2
+	ADD		".\sfx_enemy_die_3.wav"			SFX_ENEMY_DIE_3
+	ADD		".\sfx_warning_boss.wav"			SFX_WARNING_BOSS
+ENDLIB
+
+LIBNAME		"bgm_ingame"			BGM_INGAME_PACK
+	ADD		".\bgm_ingame.mp3"			BGM_INGAME
+ENDLIB
+
+LIBNAME		"bgm_main_menu"			BGM_MAIN_MENU_PACK
+	ADD		".\bgm_main_menu.mp3"			BGM_MAIN_MENU
+ENDLIB
+
+LIBNAME		"bgm_result_screen_with_new_highscore"			BGM_RESULT_SCREEN_WITH_NEW_HIGHSCORE_PACK
+	ADD		".\bgm_result_screen_with_new_highscore.mp3"			BGM_RESULT_SCREEN_WITH_NEW_HIGHSCORE
+ENDLIB
+
+LIBNAME		"bgm_boss_fight"			BGM_BOSS_FIGHT_PACK
+	ADD		".\bgm_boss_fight.mp3"			BGM_BOSS_FIGHT
+ENDLIB

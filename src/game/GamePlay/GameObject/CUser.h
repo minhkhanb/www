@@ -1,0 +1,311 @@
+#if !CUSER_H
+#define CUSER_H 1
+
+#define MAX_CHARATER									10
+//type log in account
+#define TYPE_LOGIN_NONE			0
+
+#define TYPE_LOGIN_GAMECENTER   1
+#define TYPE_LOGIN_FACEBOOK		2
+#define TYPE_LOGIN_TWITTER		3
+
+
+
+#define SAVE_GAME_VERSION_0						0 //version 1.0.0
+#define SAVE_GAME_VERSION_1						1 //version 1.0.0
+#define SAVE_GAME_VERSION_2						2 //version 1.0.0
+#define SAVE_GAME_VERSION_3						3	
+#define SAVE_GAME_VERSION_4						4//1/12/2017
+#define SAVE_GAME_VERSION_5						5//4/12/2017
+#define SAVE_GAME_VERSION_6						6//6/12/2017
+#define SAVE_GAME_VERSION_7						7//8/12/2017
+#define SAVE_GAME_VERSION_8						8//8/12/2017
+#define CURRENT_SAVE_VERSION					SAVE_GAME_VERSION_8 //version 1.0.0
+
+
+#define SAVE_FILE_NAME "data.pine"
+
+
+#define SAVE_FORMAT_CURRENT_VERSION				(0)
+#define SAVE_FORMAT_USER_ID						(SAVE_FORMAT_CURRENT_VERSION+8) //INT_TIME
+#define SAVE_FORMAT_USER_NAME					(SAVE_FORMAT_USER_ID+8) //char 128
+#define SAVE_FORMAT_OWNNER						(SAVE_FORMAT_USER_NAME + 128) //INT_TIME
+#define SAVE_FORMAT_TIMEPLAY					(SAVE_FORMAT_OWNNER + 8) //INT_TIME
+#define SAVE_FORMAT_HIGHT_SCORE					(SAVE_FORMAT_TIMEPLAY + 8) //INT_TIME
+#define SAVE_FORMAT_COIN						(SAVE_FORMAT_HIGHT_SCORE + 4) //INT32
+
+#define SAVE_FORMAT_LVL_ALIVE					(SAVE_FORMAT_COIN + 4) //BYTE
+#define SAVE_FORMAT_LVL_REVOLVER				(SAVE_FORMAT_LVL_ALIVE + 1) //BYTE
+#define SAVE_FORMAT_LVL_FAST_TRGGER				(SAVE_FORMAT_LVL_REVOLVER + 1) //BYTE
+#define SAVE_FORMAT_LVL_SPEED					(SAVE_FORMAT_LVL_FAST_TRGGER + 1) //BYTE
+#define SAVE_FORMAT_LVL_MAGNET					(SAVE_FORMAT_LVL_SPEED + 1) //BYTE
+#define SAVE_FORMAT_LVL_MACHETE					(SAVE_FORMAT_LVL_MAGNET + 1) //BYTE
+#define SAVE_FORMAT_LVL_MULE					(SAVE_FORMAT_LVL_MACHETE + 1)//BYTE
+#define SAVE_FORMAT_LVL_CAVALRY					(SAVE_FORMAT_LVL_MULE + 1)//BYTE
+
+#define SAVE_FORMAT_UNLOCK_MACHETE				(SAVE_FORMAT_LVL_CAVALRY + 1)//BYTE
+#define SAVE_FORMAT_UNLOCK_MULE					(SAVE_FORMAT_UNLOCK_MACHETE + 1)//BYTE
+#define SAVE_FORMAT_UNLOCK_CAVALRY				(SAVE_FORMAT_UNLOCK_MULE + 1)//BYTE
+
+#define SAVE_FORMAT_LVL_LOCATION				(SAVE_FORMAT_UNLOCK_CAVALRY + 1)//BYTE
+#define SAVE_FORMAT_STATE_BOSS					(SAVE_FORMAT_LVL_LOCATION + 1)//BYTE
+#define SAVE_FORMAT_HP_BOSS						(SAVE_FORMAT_STATE_BOSS + 1)//BYTE
+#define SAVE_FORMAT_ADD_REMOVE					(SAVE_FORMAT_HP_BOSS + 2)//BYTE
+#define SAVE_FORMAT_CURRENT_LOCATION			(SAVE_FORMAT_ADD_REMOVE + 1)//BYTE
+
+#define SAVE_FORMAT_TUTORIAL_STEP				(SAVE_FORMAT_CURRENT_LOCATION + 1)
+#define SAVE_FORMAT_TOTAL_COIN                  (SAVE_FORMAT_TUTORIAL_STEP + 1)
+#define SAVE_FORMAT_ADVENTURE_MODE				(SAVE_FORMAT_TOTAL_COIN + 4)
+
+
+//update version 1
+#define SAVE_FORMAT_ACHIEVEMENT_PERCENT			(SAVE_FORMAT_ADVENTURE_MODE + 1)
+#define SAVE_FORMAT_ACHIEVEMENT_COMPLETE		(SAVE_FORMAT_ACHIEVEMENT_PERCENT + 2*MAX_ACHIEVEMENT_VER_0)
+
+#define SAVE_FORMAT_TOTAL_ENEMY_DIE				(SAVE_FORMAT_ACHIEVEMENT_COMPLETE + 1*MAX_ACHIEVEMENT_VER_0)
+#define SAVE_FORMAT_TOTAL_COIN_COLECT			(SAVE_FORMAT_TOTAL_ENEMY_DIE + 2)		
+#define SAVE_FORMAT_TOTAL_ENEMY_JUMP_BARREL		(SAVE_FORMAT_TOTAL_COIN_COLECT + 4)		
+#define SAVE_FORMAT_TOTAL_ROCKET_OPEN_BARREL	(SAVE_FORMAT_TOTAL_ENEMY_JUMP_BARREL + 2)		
+#define SAVE_FORMAT_TOTAL_BOMB_OPEN_BARREL		(SAVE_FORMAT_TOTAL_ROCKET_OPEN_BARREL + 2)
+#define SAVE_FORMAT_TOTAL_BOMB_ACTIVE			(SAVE_FORMAT_TOTAL_BOMB_OPEN_BARREL + 2)		
+#define SAVE_FORMAT_TOTAL_ENEMY_DIE_BY_ROCKET	(SAVE_FORMAT_TOTAL_BOMB_ACTIVE + 2)		
+#define SAVE_FORMAT_TOTAL_ENEMY_DIE_BY_BOMB		(SAVE_FORMAT_TOTAL_ENEMY_DIE_BY_ROCKET + 2)	
+
+
+#define SAVE_FORMAT_UNLOCK_CHARATER				(SAVE_FORMAT_TOTAL_ENEMY_DIE_BY_BOMB + 2)
+#define SAVE_FORMAT_USE_CHARATER				(SAVE_FORMAT_UNLOCK_CHARATER + 1*MAX_CHARATER)
+#define SAVE_FORMAT_CURRENT_USE_CHARATER		(SAVE_FORMAT_USE_CHARATER + 1*MAX_CHARATER)
+
+#define SAVE_FORMAT_USER_PLAY_NUM				(SAVE_FORMAT_CURRENT_USE_CHARATER + 2)
+
+#define SAVE_FORMAT_USER_CURRENT_DATE			(SAVE_FORMAT_USER_PLAY_NUM + 2)
+
+#define	SAVE_FORMAT_SAVE_REMOVE_ADS				(SAVE_FORMAT_USER_CURRENT_DATE + 2)
+
+#define	SAVE_FORMAT_SAVE_NUM_ENEMYDIE_SINGLE_RUN					(SAVE_FORMAT_SAVE_REMOVE_ADS + 2)
+#define	SAVE_FORMAT_SAVE_POWER_USE									(SAVE_FORMAT_SAVE_NUM_ENEMYDIE_SINGLE_RUN + 2)
+#define	SAVE_FORMAT_SAVE_NUM_ENEMYDIE_JUMP_BARREL_TOTAL				(SAVE_FORMAT_SAVE_POWER_USE + 2)
+#define	SAVE_FORMAT_SAVE_OPEN_ROCKET_BARREL_TOTAL					(SAVE_FORMAT_SAVE_NUM_ENEMYDIE_JUMP_BARREL_TOTAL + 2)
+#define	SAVE_FORMAT_SAVE_COIN_COLLECT_SINGLE_RUN					(SAVE_FORMAT_SAVE_OPEN_ROCKET_BARREL_TOTAL + 2)
+#define	SAVE_FORMAT_SAVE_COIN_COLLECT_TOTAL							(SAVE_FORMAT_SAVE_COIN_COLLECT_SINGLE_RUN + 2)
+#define	SAVE_FORMAT_SAVE_BOMB_ACTIVE_TOTAL								(SAVE_FORMAT_SAVE_COIN_COLLECT_TOTAL + 2)
+
+//update version 1
+#define SAVE_FORMAT_QUEST_PERCENT			(SAVE_FORMAT_SAVE_BOMB_ACTIVE_TOTAL + 1)
+#define SAVE_FORMAT_QUEST_COMPLETE			(SAVE_FORMAT_QUEST_PERCENT + 2*MAX_QUEST)
+#define SAVE_FORMAT_QUEST_ID				(SAVE_FORMAT_QUEST_COMPLETE + 1*MAX_QUEST)
+//1/12/2017
+#define SAVE_FORMAT_DAILYQUEST_CUR_DATE						(SAVE_FORMAT_QUEST_ID + 2*MAX_QUEST)
+#define SAVE_FORMAT_TOTAL_DAILY_COIN_COLL					(SAVE_FORMAT_DAILYQUEST_CUR_DATE + 4)
+#define SAVE_FORMAT_NUM_DAILY_BOM_ACTIVE					(SAVE_FORMAT_TOTAL_DAILY_COIN_COLL + 4)
+#define SAVE_FORMAT_NUM_DAILY_ROCKET_BY_BARREL				(SAVE_FORMAT_NUM_DAILY_BOM_ACTIVE + 2)
+#define SAVE_FORMAT_NUM_DAILY_ENEMY_BY_BARREL				(SAVE_FORMAT_NUM_DAILY_ROCKET_BY_BARREL + 2)
+#define SAVE_FORMAT_NUM_DAILY_USE_PWUP						(SAVE_FORMAT_NUM_DAILY_ENEMY_BY_BARREL + 2)
+#define SAVE_FORMAT_DAILY_QUEST_CURRENT						(SAVE_FORMAT_NUM_DAILY_USE_PWUP + 2)
+#define SAVE_FORMAT_USER_HAS_RATE							(SAVE_FORMAT_DAILY_QUEST_CURRENT + 2)
+#define SAVE_FORMAT_USER_NUM_PLAY_IN_ASESSION				(SAVE_FORMAT_USER_HAS_RATE + 1)
+#define SAVE_FORMAT_USER_IS_FIRST_PLAY						(SAVE_FORMAT_USER_NUM_PLAY_IN_ASESSION + 2)
+#define SAVE_FORMAT_USER_RATE_CANCEL_COUNT					(SAVE_FORMAT_USER_IS_FIRST_PLAY + 1)
+
+#define SAVE_FORMAT_USER_HAS_TOUCH_PROMO					(SAVE_FORMAT_USER_RATE_CANCEL_COUNT + 2)	
+#define SAVE_FORMAT_USER_GAME_PROMO_ICON_ID				(SAVE_FORMAT_USER_HAS_TOUCH_PROMO + 1)
+#define SAVE_FORMAT_USER_GAME_PROMO_LINK_STORE			(SAVE_FORMAT_USER_GAME_PROMO_ICON_ID + 128)
+#define SAVE_FORMAT_USER_GAME_PROMO_REVISION			(SAVE_FORMAT_USER_GAME_PROMO_LINK_STORE + 128)
+#define SAVE_FORMAT_USER_GAME_PROMO_ORDER				(SAVE_FORMAT_USER_GAME_PROMO_REVISION + 2)
+#define SAVE_FORMAT_USER_GAME_PROMO_HAS_SHOW			(SAVE_FORMAT_USER_GAME_PROMO_ORDER + 2)
+#define SAVE_FORMAT_USER_GAME_PROMO_DEVICE_ID			(SAVE_FORMAT_USER_GAME_PROMO_HAS_SHOW + 1)
+#define SAVE_FORMAT_USER_GAME_PROMO_DELAY_SHOW			(SAVE_FORMAT_USER_GAME_PROMO_DEVICE_ID + 128)
+
+#define SAVE_FORMAT_END										(SAVE_FORMAT_USER_GAME_PROMO_DELAY_SHOW + 2)
+
+
+
+#define CHECKING_STATUS_EXCEPTION       (-1)
+#define CHECKING_STATUS_NO_ACCOUNT      (0)
+#define CHECKING_STATUS_NORMAL          (1)
+#define CHECKING_STATUS_OLD_DATA        (2)
+#define CHECKING_STATUS_SWAP_ACCOUNT    (3)
+
+
+#define SAVE_LOCAL_FILE_NAME "data_local.pine"
+
+#define SAVE_LOACL_FORMAT_MUSIC							(0)
+#define SAVE_LOACL_FORMAT_SOUND							(SAVE_LOACL_FORMAT_MUSIC + 1) //bool
+#define SAVE_LOACL_FORMAT_NOTI							(SAVE_LOACL_FORMAT_SOUND + 1) //bool
+
+#define SAVE_LOACL_FORMAT_NOTIFY_REVOLVER				(SAVE_LOACL_FORMAT_NOTI + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_FAST_TRIGGER			(SAVE_LOACL_FORMAT_NOTIFY_REVOLVER + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_SPEED					(SAVE_LOACL_FORMAT_NOTIFY_FAST_TRIGGER + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_MAGNET					(SAVE_LOACL_FORMAT_NOTIFY_SPEED + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_MACHETE				(SAVE_LOACL_FORMAT_NOTIFY_MAGNET + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_MULE					(SAVE_LOACL_FORMAT_NOTIFY_MACHETE + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_CAVALRY				(SAVE_LOACL_FORMAT_NOTIFY_MULE + 1)//BYTE
+#define SAVE_LOACL_FORMAT_NOTIFY_LIVE					(SAVE_LOACL_FORMAT_NOTIFY_CAVALRY + 1) //bool
+
+#define SAVE_LOACL_FORMAT_END							(SAVE_LOACL_FORMAT_NOTIFY_LIVE + 1) //bool
+
+#define USE_CONTROL_STICK								0
+#define USE_CONTROL_DRAG								1
+
+
+class CUser
+{
+public:
+	CUser()
+	{
+		_avatarURL[0] = '\0';
+		_typeLogin = TYPE_LOGIN_NONE;
+		_ower_save = 0;
+		
+	};
+
+	void AddCoin(INT32 value);
+    INT32 _highScore, _score, _coin,_total_coin;
+	INT_TIME _userId, _socialId, _ower_save;
+	bool _removeAdd;
+    bool _isLogin;
+	int _typeLogin;
+
+	INT_TIME _timePlay;
+
+	char _userName[128], _socialName[128];
+	char _avatarURL[1024];
+
+	//update version 1
+	BYTE	_currentUseCharater;
+	bool _unlockCharater[MAX_CHARATER];
+	bool _useCharacter[MAX_CHARATER];
+
+	//end update
+	//
+	BYTE _lvlLocation;
+	BYTE _stateBoss;
+	bool _completeAdventureMode;
+
+	BYTE _currentLocation;
+
+	bool _isUnlockMachete;
+	bool _isUnlockMule;
+	bool _isUnlockCavalry;
+	//save game
+	INT_TIME _versionFormat;
+	char _buffer[MAX_SAVE_BUFFER_CACHE];
+	void Init();
+	void DataDefault();
+	void DataSave();
+	void DataLoad();
+	void DataFromBuffer();
+	void DataToBuffer();
+	void SynForNewVersion(INT_TIME fromVersion);
+	void NewDataDefault(INT_TIME version);	
+
+	//save local	
+	char _buffer_local[SAVE_LOACL_FORMAT_END];	
+	void DataDefaultLocal();
+	void DataSaveLocal();
+	void DataLoadLocal();
+	void DataFromBufferLocal();
+	void DataToBufferLocal();
+	
+	void CheckLocalAndCloudSaveFile(bool isauto);
+	void ConfirmSyncSaveToCloud(bool isauto);
+	void UpdateCloudSaveFile();
+	void UpdateLocalSaveFile(Buffer* buffer);
+	void ConfirmSyncSaveFromCloud();
+	void CheckUnlockAllAchievements();
+
+	int _play_game_num;
+
+	bool isFirstPlay;
+
+	bool _hadRemovedAds;
+
+	int play_current_date;
+	int getCurrentDate();
+	int _dailyQuest_curDate;
+	bool _hasRate;
+	int _num_play_in_asession;
+
+	enum achieveStatus
+	{
+		ACHIEVEMENT_STATE_NONE,
+		ACHIEVEMENT_STATE_COMPLETED,
+		ACHIEVEMENT_STATE_SUBMITTING,
+		ACHIEVEMENT_STATE_SUBMITED_SUCCESS,
+	};
+	int _rate_cancel_count;
+#define MAX_ACHIEVEMENT	46
+	int _achievement_status[MAX_ACHIEVEMENT];
+
+#if defined (ANDROID_OS)
+#define CLOUD_SAVE_FILE_NAME							"clouddata.pine"
+#endif
+	
+
+	static BYTE getLoadingType(INT_TIME accountId)
+	{
+        if (accountId >= 200000000000000000 && accountId < 300000000000000000)
+        {
+            return TYPE_LOGIN_GAMECENTER;
+        }
+		else if (accountId >= 300000000000000000 && accountId < 400000000000000000)
+		{
+			return TYPE_LOGIN_FACEBOOK;
+		}
+		else if (accountId >= 400000000000000000 && accountId < 500000000000000000)
+		{
+			return TYPE_LOGIN_TWITTER;
+		}
+		return TYPE_LOGIN_NONE;
+	};
+
+	static INT_TIME getIdBySocialId(INT_TIME socialId, BYTE typeLogin)
+	{
+        INT_TIME UserID = 0;
+		switch (typeLogin)
+		{
+		case TYPE_LOGIN_FACEBOOK:
+			UserID =  socialId + 300000000000000000;
+			break;
+                
+		case TYPE_LOGIN_TWITTER:
+			UserID =  socialId + 400000000000000000;
+            break;
+                
+        case TYPE_LOGIN_GAMECENTER:
+            UserID =  socialId + 200000000000000000;
+            break;
+		}
+		return UserID;
+	};
+
+	static INT_TIME getSocialIdById(INT_TIME accountId)
+	{
+		if (accountId >= 200000000000000000 && accountId < 300000000000000000)
+        {
+            return accountId - 200000000000000000;
+        }
+		else if (accountId >= 300000000000000000 && accountId < 400000000000000000) //facebook
+		{
+			return accountId - 300000000000000000;
+		}
+		else if (accountId >= 400000000000000000 && accountId < 500000000000000000) //twitter
+		{
+			return accountId - 400000000000000000;
+		}
+
+		return 0;
+	};
+
+	//Update 26/12/2017
+	bool _has_touch_promo;
+	char _game_promo_icon_id[128], _game_promo_link_store[128];
+	int _game_promo_revision;
+	bool _game_promo_has_show;
+	int _game_promo_order;
+	char _game_promo_deviceID[128];
+	INT_TIME _game_promo_delay_show;
+
+};
+
+#endif

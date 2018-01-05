@@ -1,0 +1,32 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="3.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="WildWildWest.DataTransferObjects" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="SaveGameDto">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int64" Nullable="false" />
+        <Property Name="UserName" Type="Edm.String" />
+        <Property Name="AvatarUrl" Type="Edm.String" />
+        <Property Name="HighScore" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Money" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Location" Type="Edm.Int16" Nullable="false" />
+        <Property Name="Data" Type="Edm.Binary" />
+      </EntityType>
+      <EntityType Name="StatisticDto">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.String" Nullable="false" />
+        <Property Name="TotalUsers" Type="Edm.Int32" Nullable="false" />
+        <Property Name="ActiveUsers" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+    </Schema>
+    <Schema Namespace="Default" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityContainer Name="WildWildWestContext" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="SaveGames" EntityType="WildWildWest.DataTransferObjects.SaveGameDto" />
+        <EntitySet Name="Statistics" EntityType="WildWildWest.DataTransferObjects.StatisticDto" />
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

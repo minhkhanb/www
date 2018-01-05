@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceManager>
+  <FileInfo Version="1.1" />
+  <GFX>
+    <SupportVersions>
+      <Version Name="640_1136" Width="640" Height="1136" MainVersion="1" />
+      <Version Name="640_960" Width="640" Height="960" />
+      <Version Name="768_1024" Width="768" Height="1024" />
+      <Version Name="480_800" Width="480" Height="800" />
+      <Version Name="720_1280" Width="720" Height="1280" />
+    </SupportVersions>
+    <Packages>
+      <Package Name="bg" />
+      <Package Name="character" />
+      <Package Name="enemy" />
+      <Package Name="obstacle" />
+      <Package Name="effect" />
+      <Package Name="hud" />
+      <Package Name="font" />
+      <Package Name="advert" />
+    </Packages>
+    <Items>
+      <Item Name="BG_01_PALYER_1" />
+      <Item Name="BG_01_PALYER_2" />
+      <Item Name="BG_01_PALYER_4" />
+      <Item Name="CHARATER_01" />
+      <Item Name="ENEMY_01" />
+      <Item Name="ENEMY_02" />
+      <Item Name="ENEMY_03" />
+      <Item Name="ENEMY_04" />
+      <Item Name="ENEMY_05" />
+      <Item Name="OBSTACLE" />
+      <Item Name="EFFECT_BULLET" />
+      <Item Name="HUD_GAME_OVER" />
+      <Item Name="FONT_MONEY" />
+      <Item Name="HUD_COIN" />
+      <Item Name="HUD_INGAME" />
+      <Item Name="FONT_DISTANCE" />
+      <Item Name="EFFECT_PARTICAL" />
+      <Item Name="FROM_COIN" />
+      <Item Name="FROM_OBSTACLE" />
+      <Item Name="HUD_STICK" />
+      <Item Name="OBSTACLE_ROCKET" />
+      <Item Name="EFFECT_EXPLOSION" />
+      <Item Name="BG_01_PALYER_2A" />
+      <Item Name="HUD_MACHETE" />
+      <Item Name="FONT_POWER" />
+      <Item Name="BG_MAIN_MENU" />
+      <Item Name="HUD_SHOP" />
+      <Item Name="BOSS_01" />
+      <Item Name="HUD_MULE" />
+      <Item Name="HUD_MEDAL" />
+      <Item Name="CHARATER_02" />
+      <Item Name="EFFECT_FAST" />
+      <Item Name="EFFECT_DUST" />
+      <Item Name="TRESURE_CHESS" />
+      <Item Name="HUD_CHECK_POINT" />
+      <Item Name="FROM_ROCKET" />
+      <Item Name="HUD_RESULT" />
+      <Item Name="FONT_RESULT" />
+      <Item Name="HUD_APPLE" />
+      <Item Name="BG_SWAP_LAYER_1" />
+      <Item Name="BG_SWAP_LAYER_2" />
+      <Item Name="BG_02_PALYER_1" />
+      <Item Name="BG_02_PALYER_2" />
+      <Item Name="BG_02_PALYER_3" />
+      <Item Name="BG_02_PALYER_4" />
+      <Item Name="BG_01_PALYER_3" />
+      <Item Name="BOSS_02" />
+      <Item Name="BOSS_03" />
+      <Item Name="BOSS_1_A" />
+      <Item Name="EFFECT_WAGON_PARTICAL" />
+      <Item Name="EFFECT_GOLD_PARTICAL" />
+      <Item Name="EFFECT_TRAIN_SMOKE" />
+      <Item Name="BG_LOADING" />
+      <Item Name="HUD_TUTORIAL" />
+      <Item Name="BOSS_3_A" />
+      <Item Name="HUD_ICON_LOADING" />
+      <Item Name="CHARATER_03" />
+      <Item Name="CHARATER_04" />
+      <Item Name="CHARATER_05" />
+      <Item Name="font_advert" />
+      <Item Name="pine_advert" />
+      <Item Name="HUD_ANDROID" />
+      <Item Name="HUD_DAILY_REWARD" />
+      <Item Name="hud_topebox_ads" />
+    </Items>
+    <VersionItems>
+      <VersionItem Version="640_1136">
+        <Item Item="BG_01_PALYER_1" Path="bg01_layer1.bpine" Package="bg" />
+        <Item Item="BG_01_PALYER_2" Path="bg01_layer2.bpine" Package="bg" />
+        <Item Item="BG_01_PALYER_4" Path="bg01_layer4.bpine" Package="bg" />
+        <Item Item="CHARATER_01" Path="character01_ipad.bpine" Package="character" />
+        <Item Item="ENEMY_01" Path="enemy01_ipad.bpine" Package="enemy" />
+        <Item Item="ENEMY_02" Path="enemy02_ipad.bpine" Package="enemy" />
+        <Item Item="ENEMY_03" Path="enemy03_ipad.bpine" Package="enemy" />
+        <Item Item="ENEMY_04" Path="enemy04_ipad.bpine" Package="enemy" />
+        <Item Item="ENEMY_05" Path="enemy05_ipad.bpine" Package="enemy" />
+        <Item Item="OBSTACLE" Path="obstacles_ipad.bpine" Package="obstacle" />
+        <Item Item="EFFECT_BULLET" Path="bullets_ipad.bpine" Package="effect" />
+        <Item Item="HUD_GAME_OVER" Path="gameover_ipad.bpine" Package="hud" />
+        <Item Item="FONT_MONEY" Path="font_money_ipad.bpine" Package="font" />
+        <Item Item="HUD_COIN" Path="coin_ipad.bpine" Package="hud" />
+        <Item Item="HUD_INGAME" Path="igm_ipad.bpine" Package="hud" />
+        <Item Item="FONT_DISTANCE" Path="font_distance_ipad.bpine" Package="font" />
+        <Item Item="EFFECT_PARTICAL" Path="partical_ipad.bpine" Package="effect" />
+        <Item Item="FROM_COIN" Path="form_design_coin_ipad.bpine" Package="obstacle" />
+        <Item Item="FROM_OBSTACLE" Path="form_design_obstacle_ipad.bpine" Package="obstacle" />
+        <Item Item="HUD_STICK" Path="joystick_ipad.bpine" Package="hud" />
+        <Item Item="OBSTACLE_ROCKET" Path="rocket_ipad.bpine" Package="obstacle" />
+        <Item Item="EFFECT_EXPLOSION" Path="explosion_ipad.bpine" Package="effect" />
+        <Item Item="BG_01_PALYER_2A" Path="bg01_layer2a.bpine" Package="bg" />
+        <Item Item="HUD_MACHETE" Path="machete_ipad.bpine" Package="hud" />
+        <Item Item="FONT_POWER" Path="font_powerup_ipad.bpine" Package="font" />
+        <Item Item="BG_MAIN_MENU" Path="bg_mainmenu_ipad.bpine" Package="bg" />
+        <Item Item="HUD_SHOP" Path="shop_ipad.bpine" Package="hud" />
+        <Item Item="BOSS_01" Path="boss01_ipad.bpine" Package="enemy" />
+        <Item Item="HUD_MULE" Path="mule_ipad.bpine" Package="hud" />
+        <Item Item="HUD_MEDAL" Path="medal_ipad.bpine" Package="hud" />
+        <Item Item="CHARATER_02" Path="character02_ipad.bpine" Package="character" />
+        <Item Item="EFFECT_FAST" Path="fast_effect_ipad.bpine" Package="effect" />
+        <Item Item="EFFECT_DUST" Path="dust_effect_ipad.bpine" Package="effect" />
+        <Item Item="TRESURE_CHESS" Path="tresure_chess_ipad.bpine" Package="obstacle" />
+        <Item Item="HUD_CHECK_POINT" Path="distance_board_ipad.bpine" Package="hud" />
+        <Item Item="FROM_ROCKET" Path="form_design_rocket_ipad.bpine" Package="obstacle" />
+        <Item Item="HUD_RESULT" Path="result_ipad.bpine" Package="hud" />
+        <Item Item="FONT_RESULT" Path="font_result_ipad.bpine" Package="font" />
+        <Item Item="HUD_APPLE" Path="apple_ipad.bpine" Package="hud" />
+        <Item Item="BG_SWAP_LAYER_1" Path="swap_bg_layer1_ipad.bpine" Package="bg" />
+        <Item Item="BG_SWAP_LAYER_2" Path="swap_bg_layer2_ipad.bpine" Package="bg" />
+        <Item Item="BG_02_PALYER_1" Path="bg02_layer1.bpine" Package="bg" />
+        <Item Item="BG_02_PALYER_2" Path="bg02_layer2.bpine" Package="bg" />
+        <Item Item="BG_02_PALYER_3" Path="bg02_layer3.bpine" Package="bg" />
+        <Item Item="BG_02_PALYER_4" Path="bg02_layer4.bpine" Package="bg" />
+        <Item Item="BG_01_PALYER_3" Path="bg01_layer3.bpine" Package="bg" />
+        <Item Item="BOSS_02" Path="boss02_ipad.bpine" Package="enemy" />
+        <Item Item="BOSS_03" Path="boss03_ipad.bpine" Package="enemy" />
+        <Item Item="BOSS_1_A" Path="boss01a_ipad.bpine" Package="enemy" />
+        <Item Item="EFFECT_WAGON_PARTICAL" Path="wagon_partical_ipad.bpine" Package="effect" />
+        <Item Item="EFFECT_GOLD_PARTICAL" Path="gold_partical_ipad.bpine" Package="effect" />
+        <Item Item="EFFECT_TRAIN_SMOKE" Path="train_smoke_ipad.bpine" Package="effect" />
+        <Item Item="BG_LOADING" Path="bg_loading.bpine" Package="bg" />
+        <Item Item="HUD_TUTORIAL" Path="tutorial_ipad.bpine" Package="hud" />
+        <Item Item="BOSS_3_A" Path="boss03a_ipad.bpine" Package="enemy" />
+        <Item Item="HUD_ICON_LOADING" Path="loading_ipad.bpine" Package="hud" />
+        <Item Item="CHARATER_03" Path="character03_ipad.bpine" Package="character" />
+        <Item Item="CHARATER_04" Path="character04_ipad.bpine" Package="character" />
+        <Item Item="CHARATER_05" Path="character05_ipad.bpine" Package="character" />
+        <Item Item="font_advert" Path="font_advert.bpine" Package="advert" />
+        <Item Item="pine_advert" Path="pine_advert.bpine" Package="advert" />
+        <Item Item="HUD_ANDROID" Path="android_ipad.bpine" Package="hud" />
+        <Item Item="HUD_DAILY_REWARD" Path="dailyquest_data.bpine" Package="hud" />
+        <Item Item="hud_topebox_ads" Path="hud_topebox_ads_i6.bpine" Package="hud" />
+      </VersionItem>
+      <VersionItem Version="640_960" />
+      <VersionItem Version="768_1024" />
+      <VersionItem Version="480_800" />
+      <VersionItem Version="720_1280" />
+    </VersionItems>
+  </GFX>
+  <Sounds>
+    <Sound Name="bgm_ingame" Path="bgm_ingame.mp3" />
+    <Sound Name="bgm_main_menu" Path="bgm_main_menu.mp3" />
+    <Sound Name="bgm_result_screen_with_new_highscore" Path="bgm_result_screen_with_new_highscore.mp3" />
+    <Sound Name="bgm_boss_fight" Path="bgm_boss_fight.mp3" />
+    <Sound Name="sfx_bomb" Path="sfx_bomb.wav" />
+    <Sound Name="sfx_button_start" Path="sfx_button_start.wav" />
+    <Sound Name="sfx_coin" Path="sfx_coin.wav" />
+    <Sound Name="sfx_gunshot" Path="sfx_gunshot.wav" />
+    <Sound Name="sfx_horse_up_down" Path="sfx_horse_up_down.wav" />
+    <Sound Name="sfx_mission_completed" Path="sfx_mission_completed.wav" />
+    <Sound Name="sfx_mission_failed" Path="sfx_mission_failed.wav" />
+    <Sound Name="sfx_powerup_collected" Path="sfx_powerup_collected.wav" />
+    <Sound Name="sfx_score_counting" Path="sfx_score_counting.wav" />
+    <Sound Name="sfx_upgrade" Path="sfx_upgrade.wav" />
+    <Sound Name="sfx_warning" Path="sfx_warning.wav" />
+    <Sound Name="sfx_boss_defeated" Path="sfx_boss_defeated.wav" />
+    <Sound Name="sfx_button" Path="sfx_button.wav" />
+    <Sound Name="sfx_missiles" Path="sfx_missiles.wav" />
+    <Sound Name="sfx_gameover" Path="sfx_gameover.wav" />
+    <Sound Name="sfx_gunshot_boss" Path="sfx_gunshot_boss.wav" />
+    <Sound Name="sfx_horse_run" Path="sfx_horse_run.wav" />
+    <Sound Name="sfx_train_start_stop" Path="sfx_train_start_stop.wav" />
+    <Sound Name="sfx_train_warning" Path="sfx_train_warning.wav" />
+    <Sound Name="sfx_gunshot_gameover" Path="sfx_gunshot_gameover.wav" />
+    <Sound Name="sfx_knife" Path="sfx_knife.wav" />
+    <Sound Name="sfx_player_hurt" Path="sfx_player_hurt.wav" />
+    <Sound Name="sfx_train_goin" Path="sfx_train_goin.wav" />
+    <Sound Name="sfx_boss_throwing_bomb" Path="sfx_boss_throwing_bomb.wav" />
+    <Sound Name="sfx_enemy_die_1" Path="sfx_enemy_die_1.wav" />
+    <Sound Name="sfx_enemy_die_2" Path="sfx_enemy_die_2.wav" />
+    <Sound Name="sfx_enemy_die_3" Path="sfx_enemy_die_3.wav" />
+    <Sound Name="sfx_warning_boss" Path="sfx_warning_boss.wav" />
+  </Sounds>
+  <ProjectSettings>
+    <ResourceManifestHeader><![CDATA[./../src/game/Define]]></ResourceManifestHeader>
+    <ResourceManifestCPP><![CDATA[./../src/game/GamePlay]]></ResourceManifestCPP>
+  </ProjectSettings>
+  <Targets>
+    <Target Name="Simulator" AddNoise="1" GroupSFX="1">
+      <ResourceDirectory><![CDATA[./../_tmpres]]></ResourceDirectory>
+      <OutputDirectory><![CDATA[./../bin/res]]></OutputDirectory>
+      <Versions>
+        <Version Name="640_1136" />
+      </Versions>
+    </Target>
+    <Target Name="IOS" AddNoise="1" GroupSFX="1">
+      <ResourceDirectory><![CDATA[./../_tmpres]]></ResourceDirectory>
+      <OutputDirectory><![CDATA[./../bin/Res_IOS]]></OutputDirectory>
+      <Versions>
+        <Version Name="640_1136" />
+        <Version Name="640_960" />
+        <Version Name="768_1024" />
+      </Versions>
+    </Target>
+    <Target Name="Windows Phone" AddNoise="0" GroupSFX="0">
+      <ResourceDirectory><![CDATA[./../_tmpres]]></ResourceDirectory>
+      <OutputDirectory><![CDATA[./../bin/Res_WP8]]></OutputDirectory>
+      <Versions>
+        <Version Name="640_1136" />
+        <Version Name="640_960" />
+        <Version Name="480_800" />
+        <Version Name="720_1280" />
+      </Versions>
+    </Target>
+    <Target Name="Android" AddNoise="1" GroupSFX="1">
+      <ResourceDirectory><![CDATA[./../_tmpres]]></ResourceDirectory>
+      <OutputDirectory><![CDATA[./../bin/res_Android]]></OutputDirectory>
+      <Versions>
+        <Version Name="640_1136" />
+      </Versions>
+    </Target>
+  </Targets>
+</ResourceManager>

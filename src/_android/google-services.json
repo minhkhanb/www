@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "469247473601",
+    "firebase_url": "https://wild-wild-west-22205332.firebaseio.com",
+    "project_id": "wild-wild-west-22205332",
+    "storage_bucket": "wild-wild-west-22205332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469247473601:android:ffd1ad1fc51312f1",
+        "android_client_info": {
+          "package_name": "topebox.game.wildwildwest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469247473601-cfkfs8f81ti6crvjvfn5hbuaeuh116dl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "topebox.game.wildwildwest",
+            "certificate_hash": "1af8aff3ba6f95ebd5b6c2a23ff1ec3b2af271be"
+          }
+        },
+        {
+          "client_id": "469247473601-j1spenh7ta953mfithjllf9iatmhe3sh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "topebox.game.wildwildwest",
+            "certificate_hash": "43f8577f13d77787c791cd63087166a999f30648"
+          }
+        },
+        {
+          "client_id": "469247473601-ol6cbvl6avoa6igv1qlkhmsf6qnja665.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "topebox.game.wildwildwest",
+            "certificate_hash": "912f6528695415543d7f59220e8e8b4611ab4d87"
+          }
+        },
+        {
+          "client_id": "469247473601-t0bn0v35gh3n2m4ggasi55571a0jckkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2WdC73jQga0RRJIflymeYwjekORRBE2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469247473601-t0bn0v35gh3n2m4ggasi55571a0jckkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469247473601:android:0d6a64d720df850a",
+        "android_client_info": {
+          "package_name": "topebox.game.offline.wildwildwest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469247473601-ddjeg9g89hk4lru5ndcfkejdj9qn4uju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "topebox.game.offline.wildwildwest",
+            "certificate_hash": "43f8577f13d77787c791cd63087166a999f30648"
+          }
+        },
+        {
+          "client_id": "469247473601-d927dl981c93341ej8r24hjjctddlhd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "topebox.game.offline.wildwildwest",
+            "certificate_hash": "1af8aff3ba6f95ebd5b6c2a23ff1ec3b2af271be"
+          }
+        },
+        {
+          "client_id": "469247473601-v45n769ltgb21a6nuf78sg1e0gmpo8ee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "topebox.game.offline.wildwildwest",
+            "certificate_hash": "912f6528695415543d7f59220e8e8b4611ab4d87"
+          }
+        },
+        {
+          "client_id": "469247473601-t0bn0v35gh3n2m4ggasi55571a0jckkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2WdC73jQga0RRJIflymeYwjekORRBE2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469247473601-t0bn0v35gh3n2m4ggasi55571a0jckkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
